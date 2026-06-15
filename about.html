@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RU Dhol Effect</title>
+  <title>About — RU Dhol Effect</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,12 +24,12 @@
     </button>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
       <li><a href="eboard.html">E-Board &amp; Alumni</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li class="nav-dropdown">
-        <a class="nav-drop-trigger" href="#contact">
+        <a class="nav-drop-trigger" href="index.html#contact">
           Contact <i class="fa-solid fa-chevron-down nav-chev"></i>
         </a>
         <div class="nav-drop-menu">
@@ -48,23 +48,19 @@
   </div>
 </nav>
 
-<!-- ── HERO ── -->
-<header class="hero">
-  <div class="hero-content">
-    <img src="Images/rude_logo.png" alt="RU Dhol Effect Logo" class="hero-logo">
-    <h1>RU Dhol Effect</h1>
-    <p class="hero-tagline">Rutgers University's Only South-Asian Fusion Band</p>
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>About <em>RUDE</em></h1>
+    <p>Our mission, our sound, our story</p>
   </div>
-  <a href="#about" class="hero-scroll" aria-label="Scroll down">
-    <i class="fa-solid fa-chevron-down"></i>
-  </a>
-</header>
+</div>
 
-<!-- ── ABOUT BLURB ── -->
-<section id="about" class="section">
+<!-- ── MISSION ── -->
+<section class="section">
   <div class="section-inner">
-    <p class="section-label">Who We Are</p>
-    <h2 class="section-title">About RUDE</h2>
+    <p class="section-label">Our Mission</p>
+    <h2 class="section-title">Who We Are</h2>
     <div class="ornament"><span class="ornament-gem"></span></div>
     <p class="about-blurb">
       We are the <strong>only South-Asian Fusion Band at Rutgers</strong>, spreading culture by mixing
@@ -76,40 +72,49 @@
   </div>
 </section>
 
-<!-- ── CONTACT ── -->
-<section id="contact" class="section alt">
-  <div class="section-inner">
-    <p class="section-label">Get In Touch</p>
-    <h2 class="section-title">Contact Us</h2>
+<!-- ── WHAT WE DO ── -->
+<section class="section alt">
+  <div class="section-inner wide">
+    <p class="section-label">What We Do</p>
+    <h2 class="section-title">Music, Culture &amp; Community</h2>
     <div class="ornament"><span class="ornament-gem"></span></div>
-    <div class="contact-card">
-      <div class="contact-header">
-        <img src="Images/rude_logo.png" alt="RU Dhol Effect Logo" class="contact-logo">
-        <p class="contact-subtext">
-          Interested in booking us, joining the team, or collaborating? Send us a message.
-        </p>
+    <div class="about-cards">
+      <div class="about-card">
+        <div class="about-card-icon"><i class="fa-solid fa-drum"></i></div>
+        <h3>Performance</h3>
+        <p>From high-energy dhol showcases to soulful vocal sets, we perform at cultural events, competitions, and campus celebrations across Rutgers and beyond.</p>
       </div>
+      <div class="about-card">
+        <div class="about-card-icon"><i class="fa-solid fa-music"></i></div>
+        <h3>Fusion Sound</h3>
+        <p>We blend Bollywood, Punjabi folk, and regional South Asian styles with Western genres — creating arrangements that are both rooted and fresh.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon"><i class="fa-solid fa-users"></i></div>
+        <h3>Community</h3>
+        <p>RUDE is more than a band — it's a network. Members grow as musicians and leaders through peer mentorship, workshops, and shared love for the craft.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Cultural Outreach</h3>
+        <p>We partner with South Asian student orgs and campus events to spread awareness of regional South Asian music traditions in a university setting.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <form class="contact-form" autocomplete="on">
-        <div class="form-grid">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Your Name" required />
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="you@example.com" required />
-          </div>
-          <div class="form-field full">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Tell us about your event, date, and location…" rows="6" required></textarea>
-          </div>
-        </div>
-        <button type="submit" class="contact-btn">Send Message</button>
-        <p class="contact-note">
-          Or reach us directly at <a href="mailto:rudholeffect@gmail.com">rudholeffect@gmail.com</a>
-        </p>
-      </form>
+<!-- ── JOIN US ── -->
+<section class="section">
+  <div class="section-inner">
+    <p class="section-label">Get Involved</p>
+    <h2 class="section-title">Join the Family</h2>
+    <div class="ornament"><span class="ornament-gem"></span></div>
+    <div class="join-box">
+      <h3>Auditions &amp; Recruitment</h3>
+      <p>
+        Whether you're a vocalist, instrumentalist, dhol player, or dancer — if you're passionate about South Asian music and culture, we want to hear from you. Recruitment happens each semester.
+      </p>
+      <a href="mailto:rudholeffect@gmail.com" class="btn">Reach Out to Join</a>
     </div>
   </div>
 </section>

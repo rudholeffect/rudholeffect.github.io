@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — RU Dhol Effect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="Images/rude_logo_white.png" alt="RU Dhol Effect" class="nav-logo">
+      <span>RU Dhol Effect</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="eboard.html">E-Board &amp; Alumni</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li class="nav-dropdown">
+        <a class="nav-drop-trigger" href="index.html#contact">
+          Contact <i class="fa-solid fa-chevron-down nav-chev"></i>
+        </a>
+        <div class="nav-drop-menu">
+          <a class="nav-drop-item" href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+          </a>
+          <a class="nav-drop-item" href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener">
+            <i class="fa-brands fa-tiktok"></i><span>TikTok</span>
+          </a>
+          <a class="nav-drop-item" href="mailto:rudholeffect@gmail.com">
+            <i class="fa-solid fa-envelope"></i><span>Email</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <h1>Our <em>Gallery</em></h1>
+    <p>Moments from the stage, the rehearsal room, and everywhere in between</p>
+  </div>
+</div>
+
+<!-- ── GALLERY ── -->
+<section class="section">
+  <div class="section-inner wide">
+    <div class="gallery-masonry">
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x800/7a0d0d/ffffff?text=RUDE" alt="Rutgers Night Bazaar 2024">
+        <p class="gallery-caption">Rutgers Night Bazaar 2024</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x420/5a0a0a/c9a84c?text=RUDE" alt="Spring Showcase">
+        <p class="gallery-caption">Spring Showcase — The Dhol Takes Center Stage</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x600/1a1a1a/c9a84c?text=RUDE" alt="Diwali Dhamaka">
+        <p class="gallery-caption">Diwali Dhamaka 2023</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x900/7a0d0d/ffffff?text=RUDE" alt="Battle of the Bands">
+        <p class="gallery-caption">Battle of the Bands — We Brought the Beat</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x400/5a0a0a/e2c97e?text=RUDE" alt="Rehearsal Sessions">
+        <p class="gallery-caption">Late-Night Rehearsal Sessions</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x700/111111/c9a84c?text=RUDE" alt="Cultural Showcase">
+        <p class="gallery-caption">South Asian Cultural Showcase</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x450/7a0d0d/ffffff?text=RUDE" alt="RUDE Recruitment Night">
+        <p class="gallery-caption">RUDE Recruitment Night</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x800/5a0a0a/c9a84c?text=RUDE" alt="Holi Event">
+        <p class="gallery-caption">Holi Hai — Colors &amp; Rhythm</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x500/1a1a1a/ffffff?text=RUDE" alt="RUDE at Livingston">
+        <p class="gallery-caption">RUDE at Livingston Campus</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x650/7a0d0d/e2c97e?text=RUDE" alt="Unity Through Music">
+        <p class="gallery-caption">Unity Through Music</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x400/5a0a0a/ffffff?text=RUDE" alt="Fall Showcase 2023">
+        <p class="gallery-caption">Fall Showcase 2023</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://placehold.co/600x750/111111/c9a84c?text=RUDE" alt="Dhol at Dusk">
+        <p class="gallery-caption">Dhol at Dusk</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── LIGHTBOX ── -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- ── FOOTER ── -->
+<footer class="site-footer">
+  <img src="Images/rude_logo.png" alt="RU Dhol Effect" class="footer-logo">
+  <p class="footer-name">RU Dhol Effect</p>
+  <div class="footer-socials">
+    <a href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener" aria-label="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener" aria-label="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="mailto:rudholeffect@gmail.com" aria-label="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  </div>
+  <p class="footer-credit">© 2026 RU Dhol Effect <span class="footer-divider"></span> Rutgers University</p>
+</footer>
+
+<script>
+  // Mobile nav
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => {
+    links.classList.toggle('open');
+    toggle.classList.toggle('open');
+  });
+
+  // Lightbox
+  const lightbox      = document.getElementById('lightbox');
+  const lightboxImg   = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  document.querySelectorAll('.gallery-item img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+    });
+  });
+
+  lightboxClose.addEventListener('click', () => lightbox.classList.remove('open'));
+  lightbox.addEventListener('click', e => {
+    if (e.target === lightbox) lightbox.classList.remove('open');
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') lightbox.classList.remove('open');
+  });
+</script>
+</body>
+</html>
