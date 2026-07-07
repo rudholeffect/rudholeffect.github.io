@@ -3,23 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RU Dhol Effect</title>
+  <title>RU Dhol Effect — Rutgers' South-Asian Fusion Band</title>
+  <meta name="description" content="RU Dhol Effect is Rutgers University's only South-Asian fusion band, blending Desi and Western music through vocals, instruments, and the Dhol.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
+
 <!-- ── NAVBAR ── -->
-<nav class="navbar">
+<nav class="navbar" aria-label="Main navigation">
   <div class="nav-container">
     <a href="index.html" class="logo">
       <img src="Images/rude_logo_white.png" alt="RU Dhol Effect" class="nav-logo">
-      <span>RU Dhol Effect</span>
+      <span class="logo-text">
+        <strong>RU Dhol Effect</strong>
+        <small>Rutgers · Est. Fusion</small>
+      </span>
     </a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
 
@@ -28,104 +35,166 @@
       <li><a href="about.html">About</a></li>
       <li><a href="eboard.html">E-Board</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li class="nav-dropdown">
-        <a class="nav-drop-trigger" href="#contact">
-          Contact <i class="fa-solid fa-chevron-down nav-chev"></i>
-        </a>
-        <div class="nav-drop-menu">
-          <a class="nav-drop-item" href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener">
-            <i class="fa-brands fa-instagram"></i><span>Instagram</span>
-          </a>
-          <a class="nav-drop-item" href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener">
-            <i class="fa-brands fa-tiktok"></i><span>TikTok</span>
-          </a>
-          <a class="nav-drop-item" href="mailto:rudholeffect@gmail.com">
-            <i class="fa-solid fa-envelope"></i><span>Email</span>
-          </a>
-        </div>
-      </li>
+      <li><a href="#contact" class="nav-cta"><i class="fa-solid fa-envelope"></i>Book Us</a></li>
     </ul>
   </div>
 </nav>
+<div class="nav-scrim" id="navScrim"></div>
+
+<main id="main">
 
 <!-- ── HERO ── -->
 <header class="hero">
+  <div class="hero-bg" role="presentation"></div>
   <div class="hero-content">
-    <img src="Images/rude_logo.png" alt="RU Dhol Effect Logo" class="hero-logo">
-    <h1>RU Dhol Effect</h1>
-    <p class="hero-tagline">Rutgers University's Only South-Asian Fusion Band</p>
+    <p class="hero-eyebrow">Rutgers University</p>
+    <img src="Images/rude_logo.png" alt="RU Dhol Effect logo" class="hero-logo">
+    <h1>Where the <em>Dhol</em> meets the West</h1>
+    <p class="hero-tagline">
+      Rutgers University's only South-Asian fusion band — vocals, instruments,
+      and the heartbeat of the Dhol.
+    </p>
+    <div class="hero-actions">
+      <a href="about.html" class="btn">Our Story</a>
+      <a href="gallery.html" class="btn ghost">See Us Perform</a>
+    </div>
   </div>
-  <a href="#about" class="hero-scroll" aria-label="Scroll down">
-    <i class="fa-solid fa-chevron-down"></i>
+  <a href="#marquee" class="hero-scroll" aria-label="Scroll down">
+    <i class="fa-solid fa-arrow-down"></i>
   </a>
 </header>
 
-<!-- ── ABOUT BLURB ── -->
+<!-- ── MARQUEE RIBBON ── -->
+<div class="marquee" id="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Dhol <i class="fa-solid fa-diamond"></i> Fusion <i class="fa-solid fa-diamond"></i> Vocals <i class="fa-solid fa-diamond"></i> Tradition <i class="fa-solid fa-diamond"></i> Rhythm <i class="fa-solid fa-diamond"></i> Culture <i class="fa-solid fa-diamond"></i></span>
+    <span>Dhol <i class="fa-solid fa-diamond"></i> Fusion <i class="fa-solid fa-diamond"></i> Vocals <i class="fa-solid fa-diamond"></i> Tradition <i class="fa-solid fa-diamond"></i> Rhythm <i class="fa-solid fa-diamond"></i> Culture <i class="fa-solid fa-diamond"></i></span>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
 <section id="about" class="section">
-  <div class="section-inner">
-    <p class="section-label">Who We Are</p>
-    <h2 class="section-title">About RUDE</h2>
-    <div class="ornament"><span class="ornament-gem"></span></div>
-    <p class="about-blurb">
-      We are the <strong>only South-Asian Fusion Band at Rutgers</strong>, spreading culture by mixing
-      South-Asian and Western styles through our talented vocalists, instrumentalists, and our founding
-      instrument, the <strong>Dhol</strong>. Our purpose is to re-imagine Desi musical culture in a modern,
-      Western context. We strive to cultivate appreciation and awareness for the regional music of South Asia,
-      while also providing a network for student members to refine their musical abilities through mentorship.
-    </p>
+  <div class="section-inner wide">
+    <div class="about-split">
+      <div class="section-head reveal">
+        <p class="kicker">Who We Are</p>
+        <h2 class="section-title">One band,<br>two musical <em>worlds</em></h2>
+        <div class="about-pillars">
+          <span class="pill"><i class="fa-solid fa-drum"></i>Dhol</span>
+          <span class="pill"><i class="fa-solid fa-microphone"></i>Vocals</span>
+          <span class="pill"><i class="fa-solid fa-guitar"></i>Instruments</span>
+          <span class="pill"><i class="fa-solid fa-globe"></i>Fusion</span>
+        </div>
+      </div>
+      <div class="about-copy reveal" data-delay="1">
+        <p>
+          We are the <strong>only South-Asian fusion band at Rutgers</strong>, spreading culture by mixing
+          South-Asian and Western styles through our talented vocalists, instrumentalists, and our founding
+          instrument, the <strong>Dhol</strong>.
+        </p>
+        <p>
+          Our purpose is to re-imagine Desi musical culture in a modern, Western context — cultivating
+          appreciation for the regional music of South Asia while giving student members a network to refine
+          their musical abilities through mentorship.
+        </p>
+        <a href="about.html" class="btn ghost">More About RUDE <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- ── CONTACT ── -->
 <section id="contact" class="section alt">
-  <div class="section-inner">
-    <p class="section-label">Get In Touch</p>
-    <h2 class="section-title">Contact Us</h2>
-    <div class="ornament"><span class="ornament-gem"></span></div>
-    <div class="contact-card">
-      <div class="contact-header">
-        <img src="Images/rude_logo.png" alt="RU Dhol Effect Logo" class="contact-logo">
-        <p class="contact-subtext">
-          Interested in booking us, joining the team, or collaborating?
+  <div class="section-inner wide">
+    <div class="section-head center reveal">
+      <p class="kicker">Get In Touch</p>
+      <h2 class="section-title">Bring the <em>rhythm</em> to your event</h2>
+    </div>
+    <div class="contact-card reveal" data-delay="1">
+      <div class="contact-copy">
+        <p class="kicker">Contact Us</p>
+        <h3>Booking, joining, or <em>collaborating?</em></h3>
+        <p>
+          Whether you want us on your stage, want to join the family, or have a collaboration
+          in mind — we'd love to hear from you.
         </p>
       </div>
-      <div style="text-align:center; padding: 8px 0 16px; display:flex; flex-direction:column; align-items:center; gap:16px;">
-        <a href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener" class="contact-btn" style="display:inline-block; text-decoration:none;">
-          <i class="fa-brands fa-instagram" style="margin-right:8px;"></i>DM us on Instagram
+      <div class="contact-channels">
+        <a href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener" class="channel">
+          <span class="channel-icon"><i class="fa-brands fa-instagram"></i></span>
+          <span class="channel-label">
+            <strong>DM us on Instagram</strong>
+            <span>@rudholeffect</span>
+          </span>
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
-        <a href="mailto:rudholeffect@gmail.com" class="contact-btn" style="display:inline-block; text-decoration:none;">
-          <i class="fa-solid fa-envelope" style="margin-right:8px;"></i>Email us
+        <a href="mailto:rudholeffect@gmail.com" class="channel">
+          <span class="channel-icon"><i class="fa-solid fa-envelope"></i></span>
+          <span class="channel-label">
+            <strong>Email us</strong>
+            <span>rudholeffect@gmail.com</span>
+          </span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener" class="channel">
+          <span class="channel-icon"><i class="fa-brands fa-tiktok"></i></span>
+          <span class="channel-label">
+            <strong>Watch us on TikTok</strong>
+            <span>@ru.dholeffect</span>
+          </span>
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </div>
 </section>
 
+</main>
+
 <!-- ── FOOTER ── -->
 <footer class="site-footer">
-  <img src="Images/rude_logo.png" alt="RU Dhol Effect" class="footer-logo">
-  <p class="footer-name">RU Dhol Effect</p>
-  <div class="footer-socials">
-    <a href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener" aria-label="Instagram">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
-    <a href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener" aria-label="TikTok">
-      <i class="fa-brands fa-tiktok"></i>
-    </a>
-    <a href="mailto:rudholeffect@gmail.com" aria-label="Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="Images/rude_logo_white.png" alt="RU Dhol Effect" class="nav-logo">
+        <span class="logo-text">
+          <strong>RU Dhol Effect</strong>
+          <small>Rutgers · Est. Fusion</small>
+        </span>
+      </a>
+      <p>
+        Rutgers University's only South-Asian fusion band — re-imagining Desi musical
+        culture in a modern, Western context.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="eboard.html">E-Board</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i>TikTok</a></li>
+        <li><a href="mailto:rudholeffect@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a></li>
+      </ul>
+    </div>
   </div>
-  <p class="footer-credit">© 2026 RU Dhol Effect <span class="footer-divider"></span> Rutgers University</p>
+  <div class="footer-bottom">
+    <p>© 2026 RU Dhol Effect · Rutgers University</p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/rudholeffect/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ru.dholeffect" target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="mailto:rudholeffect@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
 </footer>
 
-<script>
-  const toggle = document.getElementById('navToggle');
-  const links  = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => {
-    links.classList.toggle('open');
-    toggle.classList.toggle('open');
-  });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
